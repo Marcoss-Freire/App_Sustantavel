@@ -20,4 +20,4 @@
 
 ## DIAGRAMA
 <p>Diagrama de Classe do aplicativo, baseado na interação do usuário com o app. Permitindo que o usuário acesse o guia de cuidados com os pets, onde está incluido os vídeos de tutoriais dos brinquedos e acessórios com materiais sustentáveis.</p>
-<img.src="img/diagrama.jpeg"/>
+<img.src="img/diagramadeclasses.jpeg"/>
