@@ -20,4 +20,4 @@
 
 ## DIAGRAMA
 <p>Diagrama de Classe do aplicativo, baseado na interação do usuário com o app. Permitindo que o usuário acesse o guia de cuidados com os pets, onde está incluido os vídeos de tutoriais dos brinquedos e acessórios com materiais sustentáveis.</p>
-![WhatsApp Image 2023-08-09 at 15 47 10](https://github.com/Marcoss-Freire/App_Sustantavel/assets/128051869/019ebd9a-e0a8-4f84-a0f0-9eaf8c999dda)
+<img.src="img/diagrama.jpeg"/>
