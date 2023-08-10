@@ -6,7 +6,7 @@
 <p> Nome: Marina Oliveira da Silva; </p>
 <p> Turma: 2° PI - DS </p>
 <p> Orientador: Prof° Aline Brito; </p>
-<p> Sobre o projeto: App com finalidade de praticar exercícios em Java. O README será um arquivo onde será detalhado todo processo. </p>
+<p> Sobre o projeto: App com finalidade de praticar a programação em Java e promover a sustentabilidade. </p>
 
 ## FUNCIONALIDADES
 
