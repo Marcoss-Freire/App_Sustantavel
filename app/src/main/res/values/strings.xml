@@ -1,3 +1,14 @@
 <resources>
+    // Strings globais
     <string name="app_name">App_Sustentavel</string>
+    <string name="Base">Base para outros elementos</string>
+
+    // Descrição
+    <string name="imgbtn_home">Ícone home</string>
+    <string name="imgbtn_video">Ícone vídeo</string>
+    <string name="imgbtn_perfil">Ícone Perfil</string>
+
+    // Tela inicial
+    <string name="txt_inicio">CONNECTPET</string>
+
 </resources>
