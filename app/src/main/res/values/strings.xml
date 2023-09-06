@@ -24,4 +24,11 @@
     <string name="txt_socorro">PRIMEIROS SOCORROS</string>
     <string name="txt_tutoriais">TUTORIAIS</string>
 
+    // Tela de Cuidados
+    <string name="tipo_animal">Tipo do animal</string>
+    <string name="titulo_desc">DESCRIÇÃO</string>
+    <string name="titulo_ali">ALIMENTAÇÃO</string>
+    <string name="titulo_higi">HIGIENE</string>
+    <string name="titulo_dica">DICAS</string>
+
 </resources>
