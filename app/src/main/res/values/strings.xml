@@ -7,8 +7,21 @@
     <string name="imgbtn_home">Ícone home</string>
     <string name="imgbtn_video">Ícone vídeo</string>
     <string name="imgbtn_perfil">Ícone Perfil</string>
+    <string name="img_pet">Imagem dos pets</string>
+    <string name="scr_base">Scroll View base para os elementos</string>
+    <string name="img_dog">Cachorro</string>
+    <string name="img_cat">Gato</string>
+    <string name="img_video">Capa do vídeo</string>
+    <string name="img_mais">Ver Mais</string>
 
     // Tela inicial
     <string name="txt_inicio">CONNECTPET</string>
+    <string name="txt_ola">Olá</string>
+    <string name="txt_descapp">Conheça o app para você se conectar com seu pet!</string>
+    <string name="txt_bem_vindo">Seja Bem Vindo!</string>
+    <string name="txt_cuidado">DICAS DE CUIDADO</string>
+    <string name="txt_vermais">Ver Mais</string>
+    <string name="txt_socorro">PRIMEIROS SOCORROS</string>
+    <string name="txt_tutoriais">TUTORIAIS</string>
 
 </resources>
