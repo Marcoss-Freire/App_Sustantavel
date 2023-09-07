@@ -38,4 +38,17 @@
     <string name="nome_bird">PÁSSAROS</string>
     <string name="nome_habbit">COELHOS</string>
     <string name="nome_roedor">ROEDORES</string>
+
+    // Tela dos Primeiros Socorros
+    <string name="rotulo_socorro">Primeiros Socorros</string>
+    <string name="txt_aviso">AVISO</string>
+    <string name="txt_nome_tipo">Nome do tipo</string>
+    <string name="txt_sos">SOS</string>
+    <string name="txt_samu">SAMU Animal</string>
+    <string name="txt_hosp">Hospitais</string>
+    <string name="scr_txt_engasgo">Engasgo</string>
+    <string name="scr_txt_queima">Queimadura</string>
+    <string name="scr_txt_frat">Fratura</string>
+    <string name="scr_txt_into">Intoxicação</string>
+    <string name="scr_txt_corte">Corte</string>
 </resources>
