@@ -51,4 +51,11 @@
     <string name="scr_txt_frat">Fratura</string>
     <string name="scr_txt_into">Intoxicação</string>
     <string name="scr_txt_corte">Corte</string>
+
+    // Tela dos videos
+    <string name="rotulo_video">Tutoriais</string>
+    <string name="titulo_materiais">Tipos de Materiais</string>
+    <string name="titulo_populares">Populares</string>
+    <string name="titulo_video">Titulo do video</string>
+    <string name="titulo_categoria">Categoria</string>
 </resources>

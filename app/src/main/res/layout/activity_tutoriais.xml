@@ -6,4 +6,310 @@
     android:layout_height="match_parent"
     tools:context=".Tutoriais">
 
+    <LinearLayout
+        android:id="@+id/LLrotulo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds">
+
+        <TextView
+            android:id="@+id/txt_rotulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rotulo_video"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLbase"
+        android:layout_width="match_parent"
+        android:layout_height="667dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/LLnavbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLrotulo">
+
+        <TextView
+            android:id="@+id/txt_materiais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:letterSpacing="0.1"
+            android:text="@string/titulo_materiais"
+            android:textColor="@color/gray_blue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:id="@+id/scr_tipo_materiais"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/titulo_categoria">
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_engasgo"
+                    style="@style/Widget.Material3.Chip.Filter.Elevated"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:text="@string/scr_txt_engasgo"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_queima"
+                    style="@style/Widget.Material3.Chip.Filter.Elevated"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:text="@string/scr_txt_queima"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_fratura"
+                    style="@style/Widget.Material3.Chip.Filter.Elevated"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="@string/scr_txt_frat"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_intoxi"
+                    style="@style/Widget.Material3.Chip.Filter.Elevated"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:text="@string/scr_txt_into"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_corte"
+                    style="@style/Widget.Material3.Chip.Filter.Elevated"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:text="@string/scr_txt_corte"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </com.google.android.material.chip.ChipGroup>
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:id="@+id/scr_video"
+            android:layout_width="397dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/Base"
+            app:layout_constraintBottom_toTopOf="@+id/LLnavbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/LLrotulo">
+
+            <LinearLayout
+                android:id="@+id/LLbase_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/LLtutorial"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_popular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:letterSpacing="0.1"
+                        android:text="@string/titulo_populares"
+                        android:textColor="@color/gray_blue"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/LLvideo1"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:id="@+id/img_video1"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="20dp"
+                            android:contentDescription="@string/img_video"
+                            android:src="@tools:sample/avatars" />
+
+                        <TextView
+                            android:id="@+id/txt_video"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginBottom="25dp"
+                            android:letterSpacing="0.1"
+                            android:text="@string/titulo_video"
+                            android:textColor="@color/gray_blue"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_categoria"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="-30dp"
+                            android:layout_marginTop="35dp"
+                            android:text="@string/titulo_categoria" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LLvideo2"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:id="@+id/img_video2"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="20dp"
+                            android:contentDescription="@string/img_video"
+                            android:src="@tools:sample/avatars" />
+
+                        <TextView
+                            android:id="@+id/txt_video2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginBottom="25dp"
+                            android:letterSpacing="0.1"
+                            android:text="@string/titulo_video"
+                            android:textColor="@color/gray_blue"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_categorias2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="-30dp"
+                            android:layout_marginTop="35dp"
+                            android:text="@string/titulo_categoria" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/LLvideo3"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+
+                        <ImageView
+                            android:id="@+id/img_video3"
+                            android:layout_width="100dp"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="20dp"
+                            android:contentDescription="@string/img_video"
+                            android:src="@tools:sample/avatars" />
+
+                        <TextView
+                            android:id="@+id/txt_video3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginBottom="25dp"
+                            android:letterSpacing="0.1"
+                            android:text="@string/titulo_video"
+                            android:textColor="@color/gray_blue"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_categoria3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="-30dp"
+                            android:layout_marginTop="35dp"
+                            android:text="@string/titulo_categoria" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLnavbar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintBounds">
+
+        <LinearLayout
+            android:id="@+id/LLicones"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:id="@+id/imgbtn_home"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:contentDescription="@string/imgbtn_home"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_video"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:contentDescription="@string/imgbtn_video"
+                android:src="@android:drawable/btn_star"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_perfil"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:contentDescription="@string/imgbtn_perfil"
+                android:src="@android:drawable/btn_star"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
