@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Tipos">
+
+    <LinearLayout
+        android:id="@+id/LLnavbar"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SCRbase"
+        tools:ignore="VisualLintBounds">
+
+        <LinearLayout
+            android:id="@+id/LLicones"
+            android:layout_width="280dp"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <ImageButton
+                android:id="@+id/imgbtn_home"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:contentDescription="@string/imgbtn_home"
+                tools:ignore="TouchTargetSizeCheck"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_video"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:contentDescription="@string/imgbtn_video"
+                android:src="@android:drawable/btn_star"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_perfil"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:contentDescription="@string/imgbtn_perfil"
+                android:src="@android:drawable/btn_star"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLrotulo"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/SCRbase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds">
+
+        <TextView
+            android:id="@+id/txt_rotulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rotulo_tipos"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/SCRbase"
+        android:layout_width="397dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/Base"
+        app:layout_constraintBottom_toTopOf="@+id/LLnavbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLrotulo">
+
+        <LinearLayout
+            android:id="@+id/LLbase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/LLprincipais"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/LLcao"
+                    android:layout_width="156.2dp"
+                    android:layout_height="200dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables,UselessParent">
+
+                    <ImageView
+                        android:id="@+id/img_dog"
+                        android:layout_width="126.2dp"
+                        android:layout_height="126.2dp"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/img_pet"
+                        android:src="@tools:sample/avatars" />
+
+                    <TextView
+                        android:id="@+id/txt_cao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/nome_dog"
+                        android:textColor="@color/gray_blue"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LLgato"
+                    android:layout_width="156.2dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables,UselessParent">
+
+                    <ImageView
+                        android:id="@+id/img_gato"
+                        android:layout_width="126.2dp"
+                        android:layout_height="126.2dp"
+                        android:layout_margin="10dp"
+                        android:contentDescription="@string/img_pet"
+                        android:src="@tools:sample/avatars" />
+
+                    <TextView
+                        android:id="@+id/txt_gato"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/nome_cat"
+                        android:textColor="@color/gray_blue"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLbird"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/img_bird"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/img_pet"
+                    android:src="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/txt_bird"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/nome_bird"
+                    android:textColor="@color/gray_blue"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLcoelho"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/img_coelho"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/img_pet"
+                    android:src="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/txt_coelho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/nome_habbit"
+                    android:textColor="@color/gray_blue"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLroedor"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/img_roedor"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:contentDescription="@string/img_pet"
+                    android:src="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/txt_roedor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/nome_roedor"
+                    android:textColor="@color/gray_blue"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
