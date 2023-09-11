@@ -23,19 +23,76 @@
     <string name="txt_vermais">Ver Mais</string>
     <string name="txt_socorro">PRIMEIROS SOCORROS</string>
     <string name="txt_tutoriais">TUTORIAIS</string>
+    <string-array name="array_tipo">
+        <item>Selecione</item>
+        <item>Engasgo</item>
+        <item>Queimadura</item>
+        <item>Fratura</item>
+        <item>Intoxicação</item>
+        <item>Corte</item>
+    </string-array>
 
     // Tela de Cuidados
     <string name="tipo_animal">Tipo do animal</string>
     <string name="titulo_desc">DESCRIÇÃO</string>
     <string name="titulo_ali">ALIMENTAÇÃO</string>
     <string name="titulo_higi">HIGIENE</string>
+    <string name="titulo_saude">SAÚDE</string>
     <string name="titulo_dica">DICAS</string>
+    <string name="descricao_dog">Os cachorros são animais domésticos populares que podem ser uma fonte de companhia e alegria. No entanto, é importante ter em mente que os cachorros são criaturas sociais e requerem cuidados específicos para manter sua saúde e bem-estar.</string>
+    <string name="aliment_dog">Os cachorros são animais onívoros, portanto, sua dieta deve ser composta de uma variedade de alimentos, incluindo carne, vegetais e frutas. É importante oferecer ao seu cachorro uma ração de qualidade, adequada à sua idade, porte e nível de atividade. Você também pode oferecer petiscos de frutas e verduras frescas. Em geral, precisam de uma dieta rica em proteína e baixa em carboidratos. Eles devem comer ração seca ou úmida, além de petiscos.</string>
+    <string name="aliment_dog2">Os cachorros precisam de água fresca e limpa em abundância disponível em todos os momentos.</string>
+    <string name="higiene_dog">Os cachorros precisam de banhos regulares para manter sua pelagem limpa e saudável. A frequência com que você deve dar banho no seu cachorro depende da raça, do tipo de pele e do nível de atividade. Em geral, cachorros de pelo curto podem ser banhados a cada 4-6 semanas, enquanto cachorros de pelo longo podem precisar de banhos a cada 2-4 semanas.</string>
+    <string name="saude_dog">Os cachorros precisam de visitas regulares ao veterinário. Eles devem ser vacinados contra a raiva, a parvovirose, a hepatite infecciosa canina e a leptospirose. A frequência das vacinas dependerá da idade do cachorro e do seu estilo de vida.</string>
+    <string name="saude_dog2">Além disso, precisam de vermífugos regulares para evitar a infestação por parasitas.</string>
+    <string name="dica_dog1">- O adestramento é importante para ensinar ao seu cachorro bons hábitos e evitar comportamentos indesejáveis.</string>
+    <string name="dica_dog2">- A castração é um procedimento cirúrgico que remove os órgãos reprodutivos do cachorro. É importante castrar o seu cachorro para evitar doenças e comportamentos indesejáveis, como fugas e agressividade.</string>
+    <string name="dica_dog3">- Interaja com seu cachorro regularmente. Os cachorros são animais sociais e precisam de atenção e interação. Passe algum tempo com seu cachorro todos os dias para fortalecer o vínculo entre vocês.</string>
+    <string name="descricao_cat">Os gatos são animais domésticos populares que podem ser uma fonte de companhia e alegria. No entanto, é importante ter em mente que os gatos são criaturas independentes e requerem cuidados específicos para manter sua saúde e bem-estar.</string>
+    <string name="aliment_cat">Os gatos são animais carnívoros, portanto, sua dieta deve ser baseada em carne. É importante oferecer ao seu gato uma ração de qualidade, adequada à sua idade, porte e nível de atividade. É necessário uma dieta rica em proteínas e baixa em carboidratos. Eles devem comer ração seca ou úmida, além de petiscos.</string>
+    <string name="aliment_cat2">Esses felinos precisam de água fresca e limpa em abundância disponível em todos os momentos.</string>
+    <string name="higiene_cat">Os gatos são animais muito higiênicos e se limpam regularmente. No entanto, é importante escovar os dentes do seu gato regularmente para evitar o acúmulo de placa e tártaro. Você também pode limpar as orelhas do seu gato com um algodão úmido para remover a sujeira e a cera. </string>
+    <string name="higiene_cat2">As unhas do seu gato devem ser aparadas a cada 2-3 semanas.</string>
+    <string name="saude_cat">Eles também precisam de visitas regulares ao veterinário. Eles devem ser vacinados contra a raiva, a panleucopenia felina, a rinotraqueíte felina e a clamidiose felina.</string>
+    <string name="saude_cat2">Além disso, precisam de vermífugos regulares para evitar a infestação por parasitas. </string>
+    <string name="dica_cat1">- Os mesmos precisam de uma caixa de areia limpa e confortável para fazer suas necessidades. A caixa de areia deve ser trocada regularmente e deve estar em um local tranquilo e discreto.</string>
+    <string name="dica_cat2">- A castração é um procedimento cirúrgico que remove os órgãos reprodutivos do cachorro. É importante castrar o seu pet para evitar doenças e comportamentos indesejáveis, como fugas e agressividade.</string>
+    <string name="dica_cat3">- Ofereça ao seu gato uma variedade de brinquedos, como bolas, ratos de pelúcia e arranhadores.</string>
+    <string name="descricao_aves">As aves são animais domésticos populares que podem ser uma fonte de companhia e alegria. No entanto, é importante ter em mente que as aves são criaturas delicadas e requerem cuidados específicos para manter sua saúde e bem-estar.</string>
+    <string name="aliment_aves">São animais onívoros, portanto, sua dieta deve ser composta de uma variedade de alimentos, incluindo sementes, frutas, verduras e legumes. É importante oferecer à sua ave uma ração de qualidade, adequada à sua espécie, idade e nível de atividade. Você também pode oferecer petiscos de frutas e verduras frescas.</string>
+    <string name="aliment_aves2">Esse tipo de animal doméstico precisa de água fresca e limpa em abundância disponível em todos os momentos.</string>
+    <string name="higiene_aves">As aves precisam de banhos regulares para manter suas penas limpas e saudáveis. A frequência dos banhos dependerá da espécie da ave e do tipo de plumagem. É importante usar produtos específicos para aves.</string>
+    <string name="saude_aves">Eles também precisam de visitas regulares ao veterinário. Eles devem ser vacinados contra a raiva, a panleucopenia felina, a rinotraqueíte felina e a clamidiose felina.</string>
+    <string name="saude_aves2"> A gaiola da sua ave deve ser limpa regularmente para evitar a propagação de doenças. Você deve limpar a gaiola pelo menos uma vez por semana e trocar a cama todos os dias.</string>
+    <string name="dica_aves1">- A gaiola da sua ave deve ser grande o suficiente para que ela possa se movimentar livremente e ter espaço para se exercitar. A gaiola deve ser feita de um material resistente e deve ser fácil de limpar. Você também deve fornecer à sua ave uma variedade de brinquedos para se divertir e se exercitar.</string>
+    <string name="dica_aves2">- As aves podem ser treinadas para uma variedade de tarefas, como aprender truques e responder a comandos. O adestramento é uma ótima maneira de fortalecer o vínculo entre você e sua ave.</string>
+    <string name="dica_aves3">- Você deve levar sua ave ao veterinário para exames de rotina pelo menos uma vez por ano.</string>
+    <string name="descricao_coelho">Os coelhos são animais domésticos populares que podem ser uma fonte de companhia e alegria. No entanto, é importante ter em mente que os coelhos são criaturas delicadas e requerem cuidados específicos para manter sua saúde e bem-estar.</string>
+    <string name="aliment_coelho">São animais herbívoros, portanto, precisam de uma dieta rica em fibra e baixa em gordura. Eles devem comer feno o dia todo, além de vegetais frescos e pellets. Você também pode oferecer petiscos de vegetais frescos, como cenoura, alface e espinafre.</string>
+    <string name="aliment_coelho2">Esse tipo de animal doméstico precisa de água fresca e limpa em abundância disponível em todos os momentos.</string>
+    <string name="higiene_coelho">Em média, coelhos não precisam de banhos. Eles são animais muito higiênicos e se limpam regularmente, lambendo sua pelagem. Dar banhos em coelhos pode danificar sua pelagem e pele, pois eles não produzem óleo natural para protegê-los da água.</string>
+    <string name="higiene_coelho2">As unhas do seu coelho precisam ser aparadas regularmente para evitar que cresçam demais e causem desconforto ao coelho. Você pode aparar as unhas do seu coelho com um alicate especial para coelhos.</string>
+    <string name="saude_coelho">O pet deve ser levado ao veterinário para exames de rotina pelo menos uma vez por ano. Esses exames podem ajudar a detectar problemas de saúde precocemente e garantir que o coelho esteja recebendo o tratamento adequado.</string>
+    <string name="saude_coelho2">Coelhos devem ser vacinados contra as doenças mais comuns, como a mixomatose e a coqueluche.</string>
+    <string name="dica_coelho1">- A castração ou esterilização é recomendada para coelhos de estimação. Ela pode ajudar a reduzir o risco de câncer e outros problemas de saúde, além de melhorar o comportamento do coelho.</string>
+    <string name="dica_coelho2">- É importante fornecer ao coelho alimentos duros para mastigar, como feno e vegetais, para ajudar a desgastar os dentes, já que os mesmos crescem continuamente.</string>
+    <string name="dica_coelho3">- Os coelhos precisam de pelo menos 2 horas de exercícios por dia. Você pode deixar seu coelho correr pela casa ou levá-lo para passear em um cinto.</string>
+    <string name="descricao_roedor">Os roedores são animais domésticos populares que podem ser uma fonte de companhia e alegria. No entanto, é importante ter em mente que os roedores são criaturas delicadas e requerem cuidados específicos para manter sua saúde e bem-estar.</string>
+    <string name="aliment_roedor">São animais onívoros, portanto, sua dieta deve ser composta de uma variedade de alimentos, incluindo sementes, frutas, verduras e legumes. Eles precisam de uma dieta rica em fibra e baixa em gordura. Também devem comer feno o dia todo, além de frutas frescas e pellets.</string>
+    <string name="aliment_roedor2">Esse tipo de animal doméstico precisa de água fresca e limpa em abundância disponível em todos os momentos.</string>
+    <string name="higiene_roedor">Os roedores são animais muito higiênicos e se limpam regularmente, lambendo sua pelagem. Dar banhos em roedores pode danificar sua pelagem e pele, pois eles não produzem óleo natural para protegê-los da água. Em geral, roedores não precisam de banhos. Banhos regulares podem remover a camada de óleo natural da pele do roedor, deixando-o vulnerável a infecções e problemas de pele.</string>
+    <string name="higiene_roedor2">As unhas do seu roedor devem ser aparadas a cada 2-3 semanas.</string>
+    <string name="saude_roedor">O pet deve ser levado ao veterinário para exames de rotina pelo menos uma vez por ano. Esses exames podem ajudar a detectar problemas de saúde precocemente e garantir que o animal esteja recebendo o tratamento adequado.</string>
+    <string name="saude_roedor2">Roedores devem ser vacinados contra as doenças mais comuns, como a mixomatose e a coqueluche.</string>
+    <string name="dica_roedor1">- A gaiola do seu roedor deve ser grande o suficiente para que ele possa se movimentar livremente e ter espaço para se exercitar. A gaiola deve ser feita de um material resistente e deve ser fácil de limpar.</string>
+    <string name="dica_roedor2">- Os roedores são animais frágeis e podem se machucar facilmente. Certifique-se de que a casa do seu roedor seja segura e que não haja objetos perigosos no ambiente.</string>
+    <string name="dica_roedor3">- Passe algum tempo com seu roedor todos os dias para fortalecer o vínculo entre vocês.</string>
 
     // Tela dos tipos
     <string name="rotulo_tipos">TIPOS</string>
     <string name="nome_dog">CÃES</string>
     <string name="nome_cat">GATOS</string>
-    <string name="nome_bird">PÁSSAROS</string>
+    <string name="nome_bird">AVES</string>
     <string name="nome_habbit">COELHOS</string>
     <string name="nome_roedor">ROEDORES</string>
 
@@ -51,6 +108,16 @@
     <string name="scr_txt_frat">Fratura</string>
     <string name="scr_txt_into">Intoxicação</string>
     <string name="scr_txt_corte">Corte</string>
+    <string name="aviso1">O essencial é levar o pet em uma clínica veterinária, com equipe qualificada e equipamentos adequados. Porém, é importante ter os conhecimentos sobre primeiros socorros.</string>
+    <string name="aviso2">Em caso de acidente com o animalzinho, o recomendado é levá-lo imediatamente para uma clínica veterinária. Contudo algumas medidas imediatas podem, sim, contribuir para amenizar a dor do pet e estabilizá-la. Existem diferentes tipos de emergência, em algumas delas, os primeiros socorros têm o objetivo de garantir o bem estar do animal até o hospital, em outros casos, eles são fundamentais para garantir a existência do seu pet.</string>
+    <string name="engasgo">Se possível, abra a boca do animal e tente retirar manualmente o objeto responsável pelo engasgamento. Caso o cachorro ou gato se mostre agressivo e tente morder, ajude-o a se livrar do objeto dando alguns tapinhas nas costas dele, na altura das patas da frente.</string>
+    <string name="engasgo2">No caso de bichinhos menores, você também pode segurá-los pelas patas, deixando-os de cabeça para baixo e sacudindo-os com cuidado até que o objeto seja liberado.</string>
+    <string name="queimadura">Lave a região atingida com água fria corrente por pelo menos 10 minutos. Isso ajuda a resfriar o local e a diminuir a dor. Não aplique pomadas nem tente seguir receitas caseiras, evitando vinagre, pasta de dente, entre outros. Apenas cubra a queimadura com um pano limpo e úmido, tomando cuidado para que não grude na ferida. Depois, leve o bichinho a uma clínica veterinária e aguarde as orientações do especialista.</string>
+    <string name="frat">As fraturas devem ser imobilizadas com a ajuda de esparadrapo e objetos retos, como um pedaço de papelão. Ao se aproximar do animal, tome cuidado, visto que a dor e o susto do acidente podem deixar o animal agressivo.</string>
+    <string name="frat2">No caso de fratura exposta, o melhor é cobrir a região com um pano limpo. Nunca tente colocar os ossos no lugar. Somente um veterinário terá condições de fazer isso de forma adequada.</string>
+    <string name="intoxicacao">Antes de tentar desintoxicar o animal, procure identificar a causa, a quantidade e há quanto tempo a substância foi ingerida. Isso ajudará o veterinário a seguir o melhor protocolo durante o atendimento de emergência. Caso o pet tenha vomitado, também é possível recolher uma amostra do conteúdo. Se tiver carvão ativado em casa, siga as orientações do fabricante e ofereça o produto diluído ao seu pet pela boca, usando uma seringa sem agulha. O carvão ativado ajuda a reduzir a absorção do agente tóxico pelo organismo.</string>
+    <string name="corte">Se possível, lave a região afetada com água corrente para diminuir o risco de infecções. Com a ajuda de um pano limpo, pressione a região do corte. Isso ajuda a controlar a hemorragia, evitando a perda de muito sangue até a chegada à clínica veterinária.</string>
+    <string name="aviso3">Além de seguir esses passos, é muito importante que, em caso de emergência, o tutor mantenha a calma. Desse modo, poderá tomar decisões mais acertadas e transmitir tranquilidade ao prestar os primeiros socorros nos animaizinhos.</string>
 
     // Tela dos videos
     <string name="rotulo_video">Tutoriais</string>

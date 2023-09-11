@@ -100,8 +100,7 @@
                 android:layout_width="333dp"
                 android:layout_height="333dp"
                 android:layout_margin="30dp"
-                android:contentDescription="@string/img_pet"
-                android:src="@tools:sample/avatars" />
+                android:contentDescription="@string/img_pet" />
 
             <LinearLayout
                 android:id="@+id/LLdesc"
@@ -129,7 +128,7 @@
                     android:layout_marginTop="20dp"
                     android:letterSpacing="0.05"
                     android:text="@string/txt_cuidado"
-                    android:textAlignment="inherit"
+                    android:textAlignment="gravity"
                     android:textColor="@color/blue_gray"
                     android:textSize="14sp"
                     tools:ignore="TextContrastCheck" />
@@ -189,6 +188,39 @@
 
                 <TextView
                     android:id="@+id/txt_higi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:letterSpacing="0.05"
+                    android:text="@string/txt_cuidado"
+                    android:textAlignment="inherit"
+                    android:textColor="@color/blue_gray"
+                    android:textSize="14sp"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LLsaude"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_titulo_saude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.1"
+                    android:text="@string/titulo_saude"
+                    android:textColor="@color/gray_blue"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_saude"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"

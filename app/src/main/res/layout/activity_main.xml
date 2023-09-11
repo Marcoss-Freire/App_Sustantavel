@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTintMode="screen"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -31,8 +33,7 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:contentDescription="@string/imgbtn_home"
-                tools:ignore="TouchTargetSizeCheck"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:ignore="TouchTargetSizeCheck"/>
 
             <ImageButton
                 android:id="@+id/imgbtn_video"
@@ -41,7 +42,6 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:contentDescription="@string/imgbtn_video"
-                android:src="@android:drawable/btn_star"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <ImageButton
@@ -49,7 +49,6 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:contentDescription="@string/imgbtn_perfil"
-                android:src="@android:drawable/btn_star"
                 tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
@@ -152,8 +151,7 @@
                         android:layout_width="113dp"
                         android:layout_height="113dp"
                         android:layout_margin="10dp"
-                        android:contentDescription="@string/img_pet"
-                        android:src="@tools:sample/avatars" />
+                        android:contentDescription="@string/img_pet" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -205,16 +203,14 @@
                         android:layout_width="146.5dp"
                         android:layout_height="146.5dp"
                         android:layout_marginEnd="20dp"
-                        android:contentDescription="@string/img_dog"
-                        android:src="@tools:sample/avatars" />
+                        android:contentDescription="@string/img_dog" />
 
                     <ImageView
                         android:id="@+id/img_cuidado_cat"
                         android:layout_width="146.5dp"
                         android:layout_height="146.5dp"
                         android:layout_marginStart="20dp"
-                        android:contentDescription="@string/img_cat"
-                        android:src="@tools:sample/avatars" />
+                        android:contentDescription="@string/img_cat" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -242,7 +238,8 @@
                     android:id="@+id/spinner_socorro"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="20dp" />
+                    android:layout_marginTop="20dp"
+                    android:entries="@array/array_tipo" />
 
             </LinearLayout>
 
@@ -282,32 +279,28 @@
                             android:layout_width="150dp"
                             android:layout_height="80dp"
                             android:layout_marginEnd="20dp"
-                            android:contentDescription="@string/img_video"
-                            android:src="@tools:sample/avatars" />
+                            android:contentDescription="@string/img_video" />
 
                         <ImageView
                             android:id="@+id/img_video2"
                             android:layout_width="150dp"
                             android:layout_height="80dp"
                             android:layout_marginEnd="20dp"
-                            android:contentDescription="@string/img_video"
-                            android:src="@tools:sample/avatars" />
+                            android:contentDescription="@string/img_video" />
 
                         <ImageView
                             android:id="@+id/img_video3"
                             android:layout_width="150dp"
                             android:layout_height="80dp"
                             android:layout_marginEnd="20dp"
-                            android:contentDescription="@string/img_video"
-                            android:src="@tools:sample/avatars" />
+                            android:contentDescription="@string/img_video" />
 
                         <ImageView
                             android:id="@+id/img_mais"
                             android:layout_width="80dp"
                             android:layout_height="80dp"
                             android:layout_marginEnd="20dp"
-                            android:contentDescription="@string/img_mais"
-                            android:src="@tools:sample/avatars" />
+                            android:contentDescription="@string/img_mais" />
                     </LinearLayout>
                 </HorizontalScrollView>
 
