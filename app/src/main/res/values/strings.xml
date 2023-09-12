@@ -125,4 +125,12 @@
     <string name="titulo_populares">Populares</string>
     <string name="titulo_video">Titulo do video</string>
     <string name="titulo_categoria">Categoria</string>
+
+    // Tela Perfil
+    <string name="rotulo_perfil">Minha Conta</string>
+    <string name="txt_familia">Venha fazer parte da nossa família!</string>
+    <string name="txt_cadastro">Cadastre-se</string>
+
+    // Tela Cadastro
+
 </resources>

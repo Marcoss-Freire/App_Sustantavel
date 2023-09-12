@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Perfil">
+    tools:context=".Cadastro">
 
     <LinearLayout
         android:id="@+id/LLbase"
@@ -18,40 +18,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LLrotulo"
-        tools:ignore="UseCompoundDrawables">
-
-        <ImageView
-            android:id="@+id/img_todos_pets"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_gravity="center"
-            android:contentDescription="@string/img_pet"
-            android:foregroundGravity="center"/>
-
-        <TextView
-            android:id="@+id/txt_familia"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="5dp"
-            android:contentDescription="@string/img_pet"
-            android:letterSpacing="0.1"
-            android:lineSpacingExtra="14sp"
-            android:text="@string/txt_familia"
-            android:textAlignment="center"
-            android:textColor="@color/gray_blue"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="TextSizeCheck" />
-
-        <Button
-            android:id="@+id/btn_cadastro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/txt_cadastro" />
-    </LinearLayout>
+        tools:ignore="UseCompoundDrawables"/>
 
     <LinearLayout
         android:id="@+id/LLnavbar"
@@ -116,5 +83,4 @@
             android:text="@string/rotulo_perfil"
             android:textSize="20sp" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
