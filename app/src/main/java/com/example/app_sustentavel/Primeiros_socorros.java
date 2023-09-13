@@ -13,11 +13,8 @@ import com.google.android.material.chip.Chip;
 public class Primeiros_socorros extends AppCompatActivity {
 
     TextView txt_sobre_aviso,txt_aviso_final,  txt_nome_tipo, txt_sobre_tipo;
-
     ImageButton btn_home, btn_video, btn_perfil;
-
     String nome_tipo, conteudo_tipo, aviso1, aviso2, aviso3;
-
     Chip chip_engasgo, chip_queima, chip_frat, chip_into, chip_corte;
 
     @SuppressLint("MissingInflatedId")
@@ -49,14 +46,10 @@ public class Primeiros_socorros extends AppCompatActivity {
        txt_nome_tipo.setText(nome_tipo);
        txt_sobre_tipo.setText(conteudo_tipo);
 
-       aviso1 = getString(R.string.aviso1) + "/n" + getString(R.string.aviso2);
+       aviso1 = getString(R.string.aviso1) + "\n" + getString(R.string.aviso2);
        txt_sobre_aviso.setText(aviso1);
 
        aviso3 = getString(R.string.aviso3);
        txt_aviso_final.setText(aviso3);
-
-
-
-
     }
 }

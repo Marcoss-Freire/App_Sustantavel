@@ -10,15 +10,148 @@
         android:id="@+id/LLbase"
         android:layout_width="match_parent"
         android:layout_height="687dp"
-        android:foregroundGravity="center"
-        android:gravity="center|center_horizontal"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/LLnavbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/LLrotulo"
-        tools:ignore="UseCompoundDrawables"/>
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/txt_nome_cad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:letterSpacing="0.1"
+            android:text="@string/nome_cad"
+            android:textColor="@color/gray_blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_txt_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:hint="@string/nome_exe"
+            android:inputType="text"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/txt_sobrenome_cad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="0.1"
+            android:text="@string/sobrenome_cad"
+            android:textColor="@color/gray_blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edit_txt_sobrenome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:hint="@string/sobrenome_exe"
+            android:inputType="text"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/txt_id_cad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="0.1"
+            android:text="@string/id_cad"
+            android:textColor="@color/gray_blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_txt_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:hint="@string/id_exe"
+            android:inputType="text"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/txt_email_cad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="0.1"
+            android:text="@string/email_cad"
+            android:textColor="@color/gray_blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:hint="@string/email_exe"
+            android:inputType="text|textEmailAddress"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/txt_telefone_cad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="0.1"
+            android:text="@string/telefone_cad"
+            android:textColor="@color/gray_blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edt_txt_telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:hint="@string/telefone_exe"
+            android:inputType="phone"
+            android:textSize="14sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_cadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cadastrar_dados" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/LLnavbar"
@@ -80,7 +213,7 @@
             android:id="@+id/txt_rotulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/rotulo_perfil"
+            android:text="@string/rotulo_cadastro"
             android:textSize="20sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

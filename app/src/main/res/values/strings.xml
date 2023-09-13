@@ -130,7 +130,28 @@
     <string name="rotulo_perfil">Minha Conta</string>
     <string name="txt_familia">Venha fazer parte da nossa família!</string>
     <string name="txt_cadastro">Cadastre-se</string>
+    <string name="sobre_dados">Seus Dados</string>
+    <string name="nome_usu">Nome do Usuário</string>
+    <string name="id">\@id_usu</string>
+    <string name="nome_dados">Nome: </string>
+    <string name="sobrenome_dados">Sobrenome: </string>
+    <string name="id_dados">Nome de Usuário: </string>
+    <string name="email">Email: </string>
+    <string name="telefone">Telefone: </string>
+    <string name="mostrar">Mostrar</string>
+    <string name="ocultar">Ocultar</string>
 
     // Tela Cadastro
-
+    <string name="rotulo_cadastro">Cadastro</string>
+    <string name="nome_cad">Digite seu nome:</string>
+    <string name="nome_exe">Nome</string>
+    <string name="sobrenome_cad">Digite seu último nome: </string>
+    <string name="sobrenome_exe">Sobrenome</string>
+    <string name="id_cad">Digite um nome de usuário: </string>
+    <string name="id_exe">\@pet231</string>
+    <string name="email_cad">Digite seu email: </string>
+    <string name="email_exe">example1@email.com</string>
+    <string name="telefone_cad">Digite seu número de telefone: </string>
+    <string name="telefone_exe">(DD) XXXXX - XXXX</string>
+    <string name="cadastrar_dados">Cadastrar</string>
 </resources>

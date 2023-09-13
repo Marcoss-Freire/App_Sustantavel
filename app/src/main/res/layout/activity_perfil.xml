@@ -7,53 +7,6 @@
     tools:context=".Perfil">
 
     <LinearLayout
-        android:id="@+id/LLbase"
-        android:layout_width="match_parent"
-        android:layout_height="687dp"
-        android:foregroundGravity="center"
-        android:gravity="center|center_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/LLnavbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LLrotulo"
-        tools:ignore="UseCompoundDrawables">
-
-        <ImageView
-            android:id="@+id/img_todos_pets"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:layout_gravity="center"
-            android:contentDescription="@string/img_pet"
-            android:foregroundGravity="center"/>
-
-        <TextView
-            android:id="@+id/txt_familia"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="5dp"
-            android:contentDescription="@string/img_pet"
-            android:letterSpacing="0.1"
-            android:lineSpacingExtra="14sp"
-            android:text="@string/txt_familia"
-            android:textAlignment="center"
-            android:textColor="@color/gray_blue"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="TextSizeCheck" />
-
-        <Button
-            android:id="@+id/btn_cadastro"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="50dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/txt_cadastro" />
-    </LinearLayout>
-
-    <LinearLayout
         android:id="@+id/LLnavbar"
         android:layout_width="0dp"
         android:layout_height="70dp"

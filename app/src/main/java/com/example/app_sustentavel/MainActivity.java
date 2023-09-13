@@ -3,6 +3,7 @@ package com.example.app_sustentavel;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -84,6 +85,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         primeiros_socorros.setOnItemSelectedListener(this);
 
+        img_video1.setOnClickListener(v ->{
+            Uri youtube = Uri.parse("https://youtu.be/XSeFRgFjzrc?si=oQou-H3yKv4eV-iB");
+            Intent video = new Intent(Intent.ACTION_VIEW, youtube);
+            startActivity(video);
+        });
+
+        img_video2.setOnClickListener(v ->{
+            Uri youtube = Uri.parse("https://youtu.be/XSeFRgFjzrc?si=oQou-H3yKv4eV-iB");
+            Intent video = new Intent(Intent.ACTION_VIEW, youtube);
+            startActivity(video);
+        });
+
+        img_video3.setOnClickListener(v ->{
+            Uri youtube = Uri.parse("https://youtu.be/XSeFRgFjzrc?si=oQou-H3yKv4eV-iB");
+            Intent video = new Intent(Intent.ACTION_VIEW, youtube);
+            startActivity(video);
+        });
 
         img_mais.setOnClickListener(v -> {
             Intent tutoriais = new Intent(MainActivity.this, Tutoriais.class);
