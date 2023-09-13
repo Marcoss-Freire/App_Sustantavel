@@ -1,9 +1,13 @@
 package com.example.app_sustentavel;
 
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -16,6 +20,8 @@ public class Primeiros_socorros extends AppCompatActivity {
     ImageButton btn_home, btn_video, btn_perfil;
     String nome_tipo, conteudo_tipo, aviso1, aviso2, aviso3;
     Chip chip_engasgo, chip_queima, chip_frat, chip_into, chip_corte;
+
+    ImageView img_tel, img_localizacao;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -32,6 +38,8 @@ public class Primeiros_socorros extends AppCompatActivity {
         chip_frat = findViewById(R.id.chip_fratura);
         chip_into = findViewById(R.id.chip_intoxi);
         chip_corte = findViewById(R.id.chip_corte);
+        img_tel = findViewById(R.id.img_tel);
+        img_localizacao =findViewById(R.id.img_localizacao);
         btn_home = findViewById(R.id.imgbtn_home);
         btn_video = findViewById(R.id.imgbtn_video);
         btn_perfil = findViewById(R.id.imgbtn_perfil);
@@ -51,5 +59,39 @@ public class Primeiros_socorros extends AppCompatActivity {
 
        aviso3 = getString(R.string.aviso3);
        txt_aviso_final.setText(aviso3);
+
+       img_tel.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Uri uri = Uri.parse("tel:156");
+               Intent tel = new Intent(Intent.ACTION_DIAL,uri);
+               startActivity(tel);
+           }
+       });
+
+       img_localizacao.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Uri location = Uri.parse("geo:0,0?q=Rua+Catão+1157+Vila+Romana+Lapa+São+Paulo");
+               Intent mapa = new Intent(Intent.ACTION_VIEW,location);
+               startActivity(mapa);
+           }
+       });
+
+        // Programação da NavBar
+        btn_home.setOnClickListener(v -> {
+            Intent home = new Intent(this, MainActivity.class);
+            startActivity(home);
+        });
+
+        btn_video.setOnClickListener(v -> {
+            Intent video = new Intent(this, Tutoriais.class);
+            startActivity(video);
+        });
+
+        btn_perfil.setOnClickListener(v -> {
+            Intent perfil = new Intent(this, Perfil.class);
+            startActivity(perfil);
+        });
     }
 }
