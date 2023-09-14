@@ -33,7 +33,9 @@
                 android:id="@+id/imgbtn_home"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
+                android:background="@color/blue_gray"
                 android:contentDescription="@string/imgbtn_home"
+                android:scaleType="fitXY"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <ImageButton
@@ -42,14 +44,21 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
+                android:background="@color/blue_gray"
                 android:contentDescription="@string/imgbtn_video"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_video_b"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <ImageButton
                 android:id="@+id/imgbtn_perfil"
+                style="@style/Widget.AppCompat.ImageButton"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
+                android:background="@color/blue_gray"
                 android:contentDescription="@string/imgbtn_perfil"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_perfil_b"
                 tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
@@ -207,14 +216,16 @@
                         android:layout_width="146.5dp"
                         android:layout_height="146.5dp"
                         android:layout_marginEnd="20dp"
-                        android:contentDescription="@string/img_dog" />
+                        android:contentDescription="@string/img_dog"
+                        app:srcCompat="@drawable/img_dog_home" />
 
                     <ImageView
                         android:id="@+id/img_cuidado_cat"
                         android:layout_width="146.5dp"
                         android:layout_height="146.5dp"
                         android:layout_marginStart="20dp"
-                        android:contentDescription="@string/img_cat" />
+                        android:contentDescription="@string/img_cat"
+                        app:srcCompat="@drawable/img_cat_home" />
                 </LinearLayout>
             </LinearLayout>
 
