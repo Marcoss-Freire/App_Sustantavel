@@ -1,6 +1,5 @@
 package com.example.app_sustentavel;
 
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -33,10 +32,10 @@ public class Primeiros_socorros extends AppCompatActivity {
         txt_aviso_final = findViewById(R.id.txt_aviso_final);
         txt_nome_tipo = findViewById(R.id.txt_nome_tipo);
         txt_sobre_tipo = findViewById(R.id.txt_sobre_tipo);
-        chip_engasgo = findViewById(R.id.chip_engasgo);
-        chip_queima = findViewById(R.id.chip_queima);
-        chip_frat = findViewById(R.id.chip_fratura);
-        chip_into = findViewById(R.id.chip_intoxi);
+        chip_engasgo = findViewById(R.id.chip_papelao);
+        chip_queima = findViewById(R.id.chip_tecido);
+        chip_frat = findViewById(R.id.chip_papel);
+        chip_into = findViewById(R.id.chip_plastico);
         chip_corte = findViewById(R.id.chip_corte);
         img_tel = findViewById(R.id.img_tel);
         img_localizacao =findViewById(R.id.img_localizacao);
@@ -64,7 +63,7 @@ public class Primeiros_socorros extends AppCompatActivity {
 
            @Override
            public void onClick(View v) {
-               Uri uri = Uri.parse("tel:156");
+               Uri uri = Uri.parse("tel:153");
                Intent tel = new Intent(Intent.ACTION_DIAL,uri);
                startActivity(tel);
            }
@@ -80,7 +79,44 @@ public class Primeiros_socorros extends AppCompatActivity {
        });
 
         chip_engasgo.setOnClickListener(v -> {
+            nome_tipo = getString(R.string.scr_txt_engasgo);
+            conteudo_tipo = getString(R.string.engasgo) + "\n" + getString(R.string.engasgo2);
 
+            txt_nome_tipo.setText(nome_tipo);
+            txt_sobre_tipo.setText(conteudo_tipo);
+        });
+
+        chip_queima.setOnClickListener(v -> {
+            nome_tipo = getString(R.string.scr_txt_queima);
+            conteudo_tipo = getString(R.string.queimadura);
+
+            txt_nome_tipo.setText(nome_tipo);
+            txt_sobre_tipo.setText(conteudo_tipo);
+        });
+
+        chip_frat.setOnClickListener(v -> {
+            nome_tipo = getString(R.string.scr_txt_frat);
+            conteudo_tipo = getString(R.string.frat) + "\n" + getString(R.string.frat2);
+
+
+            txt_nome_tipo.setText(nome_tipo);
+            txt_sobre_tipo.setText(conteudo_tipo);
+        });
+
+        chip_into.setOnClickListener(v -> {
+            nome_tipo = getString(R.string.scr_txt_into);
+            conteudo_tipo = getString(R.string.intoxicacao);
+
+            txt_nome_tipo.setText(nome_tipo);
+            txt_sobre_tipo.setText(conteudo_tipo);
+        });
+
+        chip_corte.setOnClickListener(v -> {
+            nome_tipo = getString(R.string.scr_txt_corte);
+            conteudo_tipo = getString(R.string.corte);
+
+            txt_nome_tipo.setText(nome_tipo);
+            txt_sobre_tipo.setText(conteudo_tipo);
         });
 
         // Programação da NavBar

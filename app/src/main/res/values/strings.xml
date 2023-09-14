@@ -129,8 +129,10 @@
     <string name="titulo_video3">2 Brinquedos caseiros para gatos.</string>
     <string name="titulo_categoria">Categoria</string>
     <string name="titulo_categoria1">Papelão</string>
-    <string name="titulo_categoria2">Plástico</string>
-    <string name="titulo_categoria3">Tecido</string>
+    <string name="titulo_categoria2">Tecido</string>
+    <string name="titulo_categoria3">Papel</string>
+    <string name="titulo_categoria4">Plástico</string>
+
 
     // Tela Perfil
     <string name="rotulo_perfil">Minha Conta</string>

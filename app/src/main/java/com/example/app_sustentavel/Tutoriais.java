@@ -9,16 +9,19 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.material.chip.Chip;
+
 public class Tutoriais extends AppCompatActivity {
 
     ImageButton btn_home, btn_video, btn_perfil;
 
     ImageView img_video1, img_video2, img_video3;
 
-    String titulo_categoria, titulo_categoria1, titulo_video, titulo_video1;
+    String titulo_categoria, titulo_video;
 
-    TextView txt_categoria, txt_video;
+    TextView txt_video, txt_categoria, txt_video2, txt_categorias2, txt_video3, txt_categoria3;
 
+    Chip chip_papelao, chip_tecido, chip_papel, chip_plastico;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +33,18 @@ public class Tutoriais extends AppCompatActivity {
         img_video1 = findViewById(R.id.img_video1);
         img_video2 = findViewById(R.id.img_video2);
         img_video3 = findViewById(R.id.img_video3);
-        txt_categoria = findViewById(R.id.txt_categoria);
         txt_video = findViewById(R.id.txt_video);
+        txt_video2 = findViewById(R.id.txt_video2);
+        txt_video3 = findViewById(R.id.txt_video3);
+        txt_categoria = findViewById(R.id.txt_categoria);
+        txt_categorias2 = findViewById(R.id.txt_categorias2);
+        txt_categoria3 = findViewById(R.id.txt_categoria3);
+        chip_papelao = findViewById(R.id.chip_papelao);
+        chip_tecido = findViewById(R.id.chip_tecido);
+        chip_papel = findViewById(R.id.chip_papel);
+        chip_plastico = findViewById(R.id.chip_plastico);
+
+
 
         img_video1.setOnClickListener(v -> {
             Uri youtube = Uri.parse("https://www.youtube.com/watch?v=vvZ4IyDOMoM&list=PLN3vAG4T-2AitMRsH5GEGAEuM6yfy5Qes&index=1");
@@ -51,6 +64,48 @@ public class Tutoriais extends AppCompatActivity {
             startActivity(video);
         });
 
+        chip_papelao.setOnClickListener(v -> {
+            Uri youtube = Uri.parse("https://www.youtube.com/results?search_query=como+fazer+brinquedos+e+acessorios+com+papel%C3%A3o+para+gatos+e+cachorros");
+            Intent video = new Intent(Intent.ACTION_VIEW, youtube);
+            startActivity(video);
+        });
+
+        chip_tecido.setOnClickListener(v -> {
+            Uri youtube = Uri.parse("https://www.youtube.com/results?search_query=como+fazer+brinquedos+e+acessorios+com+tecido+para+gatos+e+cachorros");
+            Intent video = new Intent(Intent.ACTION_VIEW, youtube);
+            startActivity(video);
+        });
+
+        chip_papel.setOnClickListener(v -> {
+            Uri youtube = Uri.parse("https://www.youtube.com/results?search_query=como+fazer+brinquedos+e+acessorios+com+papel+para+gatos+e+cachorros");
+            Intent video = new Intent(Intent.ACTION_VIEW, youtube);
+            startActivity(video);
+        });
+
+        chip_plastico.setOnClickListener(v -> {
+            Uri youtube = Uri.parse("https://www.youtube.com/results?search_query=como+fazer+brinquedos+e+acessorios+com+garrafa+pet+para+gatos+e+cachorros");
+            Intent video = new Intent(Intent.ACTION_VIEW, youtube);
+            startActivity(video);
+        });
+
+        titulo_video = getString(R.string.titulo_video1);
+        txt_video.setText(titulo_video);
+
+        titulo_categoria = getString(R.string.titulo_categoria1);
+        txt_categoria.setText(titulo_categoria);
+
+        titulo_video = getString(R.string.titulo_video2);
+        txt_video2.setText(titulo_video);
+
+        titulo_categoria = getString(R.string.titulo_categoria4);
+        txt_categorias2.setText(titulo_categoria);
+
+        titulo_video = getString(R.string.titulo_video3);
+        txt_video3.setText(titulo_video);
+
+        titulo_categoria = getString(R.string.titulo_categoria2);
+        txt_categoria3.setText(titulo_categoria);
+
         // Programação da NavBar
         btn_home.setOnClickListener(v -> {
             Intent home = new Intent(this, MainActivity.class);
@@ -67,13 +122,6 @@ public class Tutoriais extends AppCompatActivity {
             startActivity(perfil);
         });
 
-
-
-        titulo_categoria = getString(R.string.titulo_categoria);
-        titulo_video = getString(R.string.titulo_video);
-
-        txt_categoria.setText(titulo_categoria);
-        txt_video.setText(titulo_video);
 
     }
 }
