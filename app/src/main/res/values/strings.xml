@@ -124,7 +124,13 @@
     <string name="titulo_materiais">Tipos de Materiais</string>
     <string name="titulo_populares">Populares</string>
     <string name="titulo_video">Titulo do video</string>
+    <string name="titulo_video1">Brinquedo para gatos e cachoros com papelão.</string>
+    <string name="titulo_video2">Brinqueos com materiais recicláveis para gatos e cachorros.</string>
+    <string name="titulo_video3">2 Brinquedos caseiros para gatos.</string>
     <string name="titulo_categoria">Categoria</string>
+    <string name="titulo_categoria1">Papelão</string>
+    <string name="titulo_categoria2">Plástico</string>
+    <string name="titulo_categoria3">Tecido</string>
 
     // Tela Perfil
     <string name="rotulo_perfil">Minha Conta</string>

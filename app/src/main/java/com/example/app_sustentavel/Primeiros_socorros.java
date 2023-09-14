@@ -61,6 +61,7 @@ public class Primeiros_socorros extends AppCompatActivity {
        txt_aviso_final.setText(aviso3);
 
        img_tel.setOnClickListener(new View.OnClickListener() {
+
            @Override
            public void onClick(View v) {
                Uri uri = Uri.parse("tel:156");
@@ -77,6 +78,10 @@ public class Primeiros_socorros extends AppCompatActivity {
                startActivity(mapa);
            }
        });
+
+        chip_engasgo.setOnClickListener(v -> {
+
+        });
 
         // Programação da NavBar
         btn_home.setOnClickListener(v -> {
