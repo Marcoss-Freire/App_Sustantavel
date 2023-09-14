@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Tutoriais">
 
     <LinearLayout
         android:id="@+id/LLrotulo"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:background="@drawable/fundo_r_tulo"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -276,6 +278,7 @@
             android:id="@+id/LLicones"
             android:layout_width="280dp"
             android:layout_height="60dp"
+            android:background="@drawable/nav_bar"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="horizontal"
             tools:ignore="UselessParent">
@@ -285,7 +288,7 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:contentDescription="@string/imgbtn_home"
-                tools:ignore="TouchTargetSizeCheck"/>
+                tools:ignore="TouchTargetSizeCheck" />
 
             <ImageButton
                 android:id="@+id/imgbtn_video"

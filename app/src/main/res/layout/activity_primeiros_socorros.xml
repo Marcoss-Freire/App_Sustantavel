@@ -23,6 +23,7 @@
             android:id="@+id/LLicones"
             android:layout_width="280dp"
             android:layout_height="60dp"
+            android:background="@drawable/nav_bar"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="horizontal"
             tools:ignore="UselessParent">
@@ -60,6 +61,7 @@
         android:id="@+id/LLrotulo"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:background="@drawable/fundo_r_tulo"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/SCRbase"
