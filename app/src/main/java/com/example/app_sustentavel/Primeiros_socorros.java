@@ -61,7 +61,6 @@ public class Primeiros_socorros extends AppCompatActivity {
 
         img_tel.setOnClickListener(new View.OnClickListener() {
 
-<<<<<<< HEAD
             @Override
             public void onClick(View v) {
                 Uri uri = Uri.parse("tel:153");
@@ -69,15 +68,6 @@ public class Primeiros_socorros extends AppCompatActivity {
                 startActivity(tel);
             }
         });
-=======
-           @Override
-           public void onClick(View v) {
-               Uri uri = Uri.parse("tel:153");
-               Intent tel = new Intent(Intent.ACTION_DIAL,uri);
-               startActivity(tel);
-           }
-       });
->>>>>>> 9693acbead3e9c33f21d7f54e17a2f12fed41dc3
 
         img_localizacao.setOnClickListener(new View.OnClickListener() {
             @Override

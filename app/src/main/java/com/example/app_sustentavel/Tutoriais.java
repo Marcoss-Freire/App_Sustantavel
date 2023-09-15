@@ -91,19 +91,19 @@ public class Tutoriais extends AppCompatActivity {
         titulo_video = getString(R.string.titulo_video1);
         txt_video.setText(titulo_video);
 
-        titulo_categoria = getString(R.string.categoria_papel);
+        titulo_categoria = getString(R.string.categoria_papelao);
         txt_categoria.setText(titulo_categoria);
 
         titulo_video = getString(R.string.titulo_video2);
         txt_video2.setText(titulo_video);
 
-        titulo_categoria = getString(R.string.categoria_papelao);
+        titulo_categoria = getString(R.string.categoria_plastico);
         txt_categorias2.setText(titulo_categoria);
 
         titulo_video = getString(R.string.titulo_video3);
         txt_video3.setText(titulo_video);
 
-        titulo_categoria = getString(R.string.categoria_plastico);
+        titulo_categoria = getString(R.string.categoria_tecido);
         txt_categoria3.setText(titulo_categoria);
 
         // Programação da NavBar
