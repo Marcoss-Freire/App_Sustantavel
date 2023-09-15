@@ -128,11 +128,18 @@
     <string name="titulo_video2">Brinqueos com materiais recicláveis para gatos e cachorros.</string>
     <string name="titulo_video3">2 Brinquedos caseiros para gatos.</string>
     <string name="titulo_categoria">Categoria</string>
+<<<<<<< HEAD
     <string name="categoria_papelao">Papelão</string>
     <string name="categoria_plastico">Plástico</string>
     <string name="categoria_tecido">Tecido</string>
     <string name="categoria_papel">Papel</string>
 
+=======
+    <string name="titulo_categoria1">Papelão</string>
+    <string name="titulo_categoria2">Tecido</string>
+    <string name="titulo_categoria3">Papel</string>
+    <string name="titulo_categoria4">Plástico</string>
+>>>>>>> 9693acbead3e9c33f21d7f54e17a2f12fed41dc3
 
 
     // Tela Perfil

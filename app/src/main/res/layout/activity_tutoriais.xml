@@ -69,11 +69,16 @@
                     style="@style/Widget.Material3.Chip.Filter.Elevated"
                     android:layout_width="90dp"
                     android:layout_height="40dp"
+<<<<<<< HEAD
                     android:text="@string/categoria_papelao"
+=======
+                    android:text="@string/titulo_categoria1"
+>>>>>>> 9693acbead3e9c33f21d7f54e17a2f12fed41dc3
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip_tecido"
+<<<<<<< HEAD
                     style="@style/Widget.Material3.Chip.Filter.Elevated"
                     android:layout_width="80dp"
                     android:layout_height="40dp"
@@ -82,6 +87,32 @@
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip_papel"
+=======
+                    style="@style/Widget.Material3.Chip.Filter.Elevated"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:text="@string/titulo_categoria2"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_papel"
+                    style="@style/Widget.Material3.Chip.Filter.Elevated"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:text="@string/titulo_categoria3"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_plastico"
+                    style="@style/Widget.Material3.Chip.Filter.Elevated"
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:text="@string/titulo_categoria4"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_corte"
+>>>>>>> 9693acbead3e9c33f21d7f54e17a2f12fed41dc3
                     style="@style/Widget.Material3.Chip.Filter.Elevated"
                     android:layout_width="70dp"
                     android:layout_height="40dp"
