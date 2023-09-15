@@ -65,44 +65,37 @@
                 android:layout_height="40dp">
 
                 <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_engasgo"
+                    android:id="@+id/chip_papelao"
                     style="@style/Widget.Material3.Chip.Filter.Elevated"
                     android:layout_width="90dp"
                     android:layout_height="40dp"
-                    android:text="@string/scr_txt_engasgo"
+                    android:text="@string/categoria_papelao"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_queima"
-                    style="@style/Widget.Material3.Chip.Filter.Elevated"
-                    android:layout_width="110dp"
-                    android:layout_height="40dp"
-                    android:text="@string/scr_txt_queima"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_fratura"
+                    android:id="@+id/chip_tecido"
                     style="@style/Widget.Material3.Chip.Filter.Elevated"
                     android:layout_width="80dp"
                     android:layout_height="40dp"
-                    android:text="@string/scr_txt_frat"
+                    android:text="@string/categoria_tecido"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_intoxi"
-                    style="@style/Widget.Material3.Chip.Filter.Elevated"
-                    android:layout_width="110dp"
-                    android:layout_height="40dp"
-                    android:text="@string/scr_txt_into"
-                    tools:ignore="TouchTargetSizeCheck" />
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_corte"
+                    android:id="@+id/chip_papel"
                     style="@style/Widget.Material3.Chip.Filter.Elevated"
                     android:layout_width="70dp"
                     android:layout_height="40dp"
-                    android:text="@string/scr_txt_corte"
+                    android:text="@string/categoria_papel"
                     tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_plastico"
+                    style="@style/Widget.Material3.Chip.Filter.Elevated"
+                    android:layout_width="90dp"
+                    android:layout_height="40dp"
+                    android:text="@string/categoria_plastico"
+                    tools:ignore="TouchTargetSizeCheck" />
+
             </com.google.android.material.chip.ChipGroup>
         </HorizontalScrollView>
 
@@ -297,6 +290,8 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:contentDescription="@string/imgbtn_video"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_video_b"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <ImageButton
@@ -304,6 +299,8 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:contentDescription="@string/imgbtn_perfil"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_perfil_b"
                 tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>

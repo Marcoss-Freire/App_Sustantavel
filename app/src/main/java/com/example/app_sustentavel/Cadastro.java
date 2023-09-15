@@ -1,28 +1,33 @@
 package com.example.app_sustentavel;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Spinner;
 import android.widget.Toast;
 
-import java.util.Objects;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Cadastro extends AppCompatActivity {
 
     EditText txt_nome, txt_sobrenome, txt_email, txt_id, txt_telefone;
     Button btn_cadastrar;
     ImageButton btn_home, btn_video, btn_perfil;
+    Spinner spn_avatar;
     String nome, sobrenome, id, email, telefone;
+    Integer img_avatar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cadastro);
 
+        spn_avatar = findViewById(R.id.sppinner_avatar);
         txt_nome = findViewById(R.id.edt_txt_nome);
         txt_sobrenome = findViewById(R.id.edit_txt_sobrenome);
         txt_id = findViewById(R.id.edt_txt_id);
@@ -32,6 +37,40 @@ public class Cadastro extends AppCompatActivity {
         btn_home = findViewById(R.id.imgbtn_home);
         btn_video = findViewById(R.id.imgbtn_video);
         btn_perfil = findViewById(R.id.imgbtn_perfil);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.array_avatar, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spn_avatar.setAdapter(adapter);
+
+        spn_avatar.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if(position == 1){
+                    img_avatar = R.drawable.max;
+                }
+                else if(position == 2){
+                    img_avatar = R.drawable.duke;
+                }
+                else if(position == 3){
+                    img_avatar = R.drawable.snowball;
+                }
+                else if(position == 4){
+                    img_avatar = R.drawable.mel;
+                }
+                else if(position == 5){
+                    img_avatar = R.drawable.chloe;
+                }
+                else if(position == 6){
+                    img_avatar = R.drawable.gidget;
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
 
         btn_cadastrar.setOnClickListener(v -> {
             nome = String.valueOf(txt_nome.getText());
@@ -43,9 +82,9 @@ public class Cadastro extends AppCompatActivity {
             if (nome.equals("Nome") || sobrenome.equals(getString(R.string.sobrenome_exe)) || id.equals("@pet123") || email.equals("example1@email.com") || telefone.equals("(DD) XXXXX-XXXX")) {
                 Toast erro = Toast.makeText(this, "Preencha todos os campos e tente novamente", Toast.LENGTH_LONG);
                 erro.show();
-            }
-            else {
+            } else {
                 Intent cadastro = new Intent(this, Perfil.class);
+                cadastro.putExtra("img", img_avatar);
                 cadastro.putExtra("nome", nome);
                 cadastro.putExtra("sobrenome", sobrenome);
                 cadastro.putExtra("id", id);

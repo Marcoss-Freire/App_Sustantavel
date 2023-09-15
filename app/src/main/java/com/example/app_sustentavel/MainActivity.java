@@ -3,6 +3,7 @@ package com.example.app_sustentavel;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -18,10 +19,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     // Criando variáveis Globais
     ImageView img_dog, img_cat, img_video1, img_video2, img_video3, img_mais;
     ImageButton btn_video, btn_perfil;
-    TextView txt_mais;
+    TextView txt_mais, txt_ola;
     Spinner primeiros_socorros;
     String nome_pet, text_desc, text_aliment, text_higiene, text_saude, text_dica;
     String nome_tipo, conteudo_tipo;
+    Integer img_pet;
 
 
     @Override
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         btn_video = findViewById(R.id.imgbtn_video);
         btn_perfil = findViewById(R.id.imgbtn_perfil);
 
+
         // Programação da parte de cuidados
         txt_mais.setOnClickListener(v ->{
             Intent tela_tipos = new Intent(MainActivity.this, Tipos.class);
@@ -49,12 +52,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         img_dog.setOnClickListener(v -> {
             Intent passar_dados = new Intent(MainActivity.this, Cuidados.class);
+            img_pet = R.drawable.dog_duke;
             nome_pet = getString(R.string.nome_dog);
             text_desc = getString(R.string.descricao_dog);
             text_aliment = getString(R.string.aliment_dog) + "\n" + getString(R.string.aliment_dog2); // O \n quebra linha
             text_higiene = getString(R.string.higiene_dog);
             text_saude = getString(R.string.saude_dog) + "\n" + getString(R.string.saude_dog2);
             text_dica = getString(R.string.dica_dog1) + "\n\n" + getString(R.string.dica_dog2) + "\n\n" + getString(R.string.dica_dog3);
+            passar_dados.putExtra("img", img_pet);
             passar_dados.putExtra("nome", nome_pet); // Passando os dados através das variáveis, primeiro o a chave, depois o valor
             passar_dados.putExtra("descricao", text_desc);
             passar_dados.putExtra("aliment", text_aliment);
@@ -66,12 +71,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         img_cat.setOnClickListener(v -> {
             Intent passar_dados = new Intent(MainActivity.this, Cuidados.class);
+            img_pet = R.drawable.cat_chloe;
             nome_pet = getString(R.string.nome_cat);
             text_desc = getString(R.string.descricao_cat);
             text_aliment = getString(R.string.aliment_cat) + "\n" + getString(R.string.aliment_cat2);
             text_higiene = getString(R.string.higiene_cat) + "\n" + getString(R.string.higiene_cat2);
             text_saude = getString(R.string.saude_cat) + "\n" + getString(R.string.saude_cat2);
             text_dica = getString(R.string.dica_cat1) + "\n\n" + getString(R.string.dica_cat2) + "\n\n" + getString(R.string.dica_cat3);
+            passar_dados.putExtra("img", img_pet);
             passar_dados.putExtra("nome", nome_pet);
             passar_dados.putExtra("descricao", text_desc);
             passar_dados.putExtra("aliment", text_aliment);

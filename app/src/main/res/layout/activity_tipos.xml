@@ -23,6 +23,7 @@
             android:id="@+id/LLicones"
             android:layout_width="280dp"
             android:layout_height="60dp"
+            android:background="@drawable/nav_bar"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="horizontal"
             tools:ignore="UselessParent">
@@ -31,8 +32,11 @@
                 android:id="@+id/imgbtn_home"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
+                android:background="@color/blue_gray"
                 android:contentDescription="@string/imgbtn_home"
-                tools:ignore="TouchTargetSizeCheck"/>
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_home_b"
+                tools:ignore="TouchTargetSizeCheck" />
 
             <ImageButton
                 android:id="@+id/imgbtn_video"
@@ -40,14 +44,20 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
+                android:background="@color/blue_gray"
                 android:contentDescription="@string/imgbtn_video"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_video_b"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <ImageButton
                 android:id="@+id/imgbtn_perfil"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
+                android:background="@color/blue_gray"
                 android:contentDescription="@string/imgbtn_perfil"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_perfil_b"
                 tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
@@ -57,6 +67,7 @@
         android:id="@+id/LLrotulo"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:background="@drawable/fundo_r_tulo"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/SCRbase"
@@ -106,6 +117,7 @@
                     android:layout_width="156.2dp"
                     android:layout_height="200dp"
                     android:layout_marginEnd="10dp"
+                    android:background="@drawable/fundo_verde_vertical"
                     android:gravity="center"
                     android:orientation="vertical"
                     tools:ignore="UseCompoundDrawables,UselessParent">
@@ -115,7 +127,8 @@
                         android:layout_width="126.2dp"
                         android:layout_height="126.2dp"
                         android:layout_margin="10dp"
-                        android:contentDescription="@string/img_pet"/>
+                        android:contentDescription="@string/img_pet"
+                        app:srcCompat="@drawable/dog" />
 
                     <TextView
                         android:id="@+id/txt_cao"
@@ -134,6 +147,7 @@
                     android:layout_width="156.2dp"
                     android:layout_height="200dp"
                     android:layout_marginStart="10dp"
+                    android:background="@drawable/fundo_verde_vertical"
                     android:gravity="center"
                     android:orientation="vertical"
                     tools:ignore="UseCompoundDrawables,UselessParent">
@@ -143,7 +157,8 @@
                         android:layout_width="126.2dp"
                         android:layout_height="126.2dp"
                         android:layout_margin="10dp"
-                        android:contentDescription="@string/img_pet"/>
+                        android:contentDescription="@string/img_pet"
+                        app:srcCompat="@drawable/cat" />
 
                     <TextView
                         android:id="@+id/txt_gato"
@@ -165,6 +180,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="20dp"
+                android:background="@drawable/fundo_verde_horizontal"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
@@ -175,7 +191,8 @@
                     android:layout_height="80dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="10dp"
-                    android:contentDescription="@string/img_pet"/>
+                    android:contentDescription="@string/img_pet"
+                    app:srcCompat="@drawable/bird" />
 
                 <TextView
                     android:id="@+id/txt_bird"
@@ -196,6 +213,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="20dp"
+                android:background="@drawable/fundo_verde_horizontal"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
@@ -206,7 +224,8 @@
                     android:layout_height="80dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="10dp"
-                    android:contentDescription="@string/img_pet" />
+                    android:contentDescription="@string/img_pet"
+                    app:srcCompat="@drawable/coelho" />
 
                 <TextView
                     android:id="@+id/txt_coelho"
@@ -227,6 +246,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="20dp"
+                android:background="@drawable/fundo_verde_horizontal"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
@@ -237,7 +257,8 @@
                     android:layout_height="80dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="10dp"
-                    android:contentDescription="@string/img_pet"/>
+                    android:contentDescription="@string/img_pet"
+                    app:srcCompat="@drawable/roedor" />
 
                 <TextView
                     android:id="@+id/txt_roedor"

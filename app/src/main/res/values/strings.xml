@@ -128,9 +128,12 @@
     <string name="titulo_video2">Brinqueos com materiais recicláveis para gatos e cachorros.</string>
     <string name="titulo_video3">2 Brinquedos caseiros para gatos.</string>
     <string name="titulo_categoria">Categoria</string>
-    <string name="titulo_categoria1">Papelão</string>
-    <string name="titulo_categoria2">Plástico</string>
-    <string name="titulo_categoria3">Tecido</string>
+    <string name="categoria_papelao">Papelão</string>
+    <string name="categoria_plastico">Plástico</string>
+    <string name="categoria_tecido">Tecido</string>
+    <string name="categoria_papel">Papel</string>
+
+
 
     // Tela Perfil
     <string name="rotulo_perfil">Minha Conta</string>
@@ -149,6 +152,7 @@
 
     // Tela Cadastro
     <string name="rotulo_cadastro">Cadastro</string>
+    <string name="txt_avatar">Selecione seu avatar: </string>
     <string name="nome_cad">Digite seu nome:</string>
     <string name="nome_exe">Nome</string>
     <string name="sobrenome_cad">Digite seu último nome: </string>
@@ -160,4 +164,13 @@
     <string name="telefone_cad">Digite seu número de telefone: </string>
     <string name="telefone_exe">(DD) XXXXX - XXXX</string>
     <string name="cadastrar_dados">Cadastrar</string>
+    <string-array name="array_avatar">
+        <item>Selecione</item>
+        <item>Max</item>
+        <item>Duke</item>
+        <item>Snowball</item>
+        <item>Mel</item>
+        <item>Chloe</item>
+        <item>Gidget</item>
+    </string-array>
 </resources>

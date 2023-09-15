@@ -1,16 +1,17 @@
 package com.example.app_sustentavel;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Tipos extends AppCompatActivity {
 
     ImageView img_dog, img_cat, img_bird, img_coelho, img_roedor;
     ImageView btn_home, btn_video, btn_perfil;
     String nome_pet, text_desc, text_aliment, text_higiene, text_saude, text_dica;
+    Integer img_pet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +29,14 @@ public class Tipos extends AppCompatActivity {
 
         img_dog.setOnClickListener(v -> {
             Intent passar_dados = new Intent(this, Cuidados.class);
+            img_pet = R.drawable.dog;
             nome_pet = getString(R.string.nome_dog);
             text_desc = getString(R.string.descricao_dog);
             text_aliment = getString(R.string.aliment_dog) + "\n" + getString(R.string.aliment_dog2); // O \n quebra linha
             text_higiene = getString(R.string.higiene_dog);
             text_saude = getString(R.string.saude_dog) + "\n" + getString(R.string.saude_dog2);
             text_dica = getString(R.string.dica_dog1) + "\n\n" + getString(R.string.dica_dog2) + "\n\n" + getString(R.string.dica_dog3);
+            passar_dados.putExtra("img", img_pet);
             passar_dados.putExtra("nome", nome_pet); // Passando os dados através das variáveis, primeiro o a chave, depois o valor
             passar_dados.putExtra("descricao", text_desc);
             passar_dados.putExtra("aliment", text_aliment);
@@ -45,12 +48,14 @@ public class Tipos extends AppCompatActivity {
 
         img_cat.setOnClickListener(v -> {
             Intent passar_dados = new Intent(this, Cuidados.class);
+            img_pet = R.drawable.cat;
             nome_pet = getString(R.string.nome_cat);
             text_desc = getString(R.string.descricao_cat);
             text_aliment = getString(R.string.aliment_cat) + "\n" + getString(R.string.aliment_cat2);
             text_higiene = getString(R.string.higiene_cat) + "\n" + getString(R.string.higiene_cat2);
             text_saude = getString(R.string.saude_cat) + "\n" + getString(R.string.saude_cat2);
             text_dica = getString(R.string.dica_cat1) + "\n\n" + getString(R.string.dica_cat2) + "\n\n" + getString(R.string.dica_cat3);
+            passar_dados.putExtra("img", img_pet);
             passar_dados.putExtra("nome", nome_pet);
             passar_dados.putExtra("descricao", text_desc);
             passar_dados.putExtra("aliment", text_aliment);
@@ -62,12 +67,14 @@ public class Tipos extends AppCompatActivity {
 
         img_bird.setOnClickListener(v -> {
             Intent passar_dados = new Intent(this, Cuidados.class);
+            img_pet = R.drawable.bird;
             nome_pet = getString(R.string.nome_bird);
             text_desc = getString(R.string.descricao_aves);
             text_aliment = getString(R.string.aliment_aves) + "\n" + getString(R.string.aliment_aves2); // O \n quebra linha
             text_higiene = getString(R.string.higiene_aves);
             text_saude = getString(R.string.saude_aves) + "\n" + getString(R.string.saude_aves2);
             text_dica = getString(R.string.dica_aves1) + "\n\n" + getString(R.string.dica_aves2) + "\n\n" + getString(R.string.dica_aves3);
+            passar_dados.putExtra("img", img_pet);
             passar_dados.putExtra("nome", nome_pet); // Passando os dados através das variáveis, primeiro o a chave, depois o valor
             passar_dados.putExtra("descricao", text_desc);
             passar_dados.putExtra("aliment", text_aliment);
@@ -79,12 +86,14 @@ public class Tipos extends AppCompatActivity {
 
         img_coelho.setOnClickListener(v -> {
             Intent passar_dados = new Intent(this, Cuidados.class);
+            img_pet = R.drawable.coelho;
             nome_pet = getString(R.string.nome_habbit);
             text_desc = getString(R.string.descricao_coelho);
             text_aliment = getString(R.string.aliment_coelho) + "\n" + getString(R.string.aliment_coelho2);
             text_higiene = getString(R.string.higiene_coelho) + "\n" + getString(R.string.higiene_coelho2);
             text_saude = getString(R.string.saude_coelho) + "\n" + getString(R.string.saude_coelho2);
             text_dica = getString(R.string.dica_coelho1) + "\n\n" + getString(R.string.dica_coelho2) + "\n\n" + getString(R.string.dica_coelho3);
+            passar_dados.putExtra("img", img_pet);
             passar_dados.putExtra("nome", nome_pet);
             passar_dados.putExtra("descricao", text_desc);
             passar_dados.putExtra("aliment", text_aliment);
@@ -96,12 +105,14 @@ public class Tipos extends AppCompatActivity {
 
         img_roedor.setOnClickListener(v -> {
             Intent passar_dados = new Intent(this, Cuidados.class);
+            img_pet = R.drawable.roedor;
             nome_pet = getString(R.string.nome_roedor);
             text_desc = getString(R.string.descricao_roedor);
             text_aliment = getString(R.string.aliment_roedor) + "\n" + getString(R.string.aliment_roedor2);
             text_higiene = getString(R.string.higiene_roedor) + "\n" + getString(R.string.higiene_roedor);
             text_saude = getString(R.string.saude_roedor) + "\n" + getString(R.string.saude_roedor2);
             text_dica = getString(R.string.dica_roedor1) + "\n\n" + getString(R.string.dica_roedor2) + "\n\n" + getString(R.string.dica_roedor3);
+            passar_dados.putExtra("img", img_pet);
             passar_dados.putExtra("nome", nome_pet);
             passar_dados.putExtra("descricao", text_desc);
             passar_dados.putExtra("aliment", text_aliment);
