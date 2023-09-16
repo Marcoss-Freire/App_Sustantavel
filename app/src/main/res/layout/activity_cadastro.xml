@@ -207,6 +207,8 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:contentDescription="@string/imgbtn_home"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_home_c"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <ImageButton
@@ -216,6 +218,8 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:contentDescription="@string/imgbtn_video"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_video_c"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <ImageButton
@@ -223,6 +227,8 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:contentDescription="@string/imgbtn_perfil"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_perfil_c"
                 tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>

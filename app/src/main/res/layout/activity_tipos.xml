@@ -117,7 +117,7 @@
                     android:layout_width="156.2dp"
                     android:layout_height="200dp"
                     android:layout_marginEnd="10dp"
-                    android:background="@drawable/fundo_verde_vertical"
+                    android:background="@drawable/parte_verde_vertical_a"
                     android:gravity="center"
                     android:orientation="vertical"
                     tools:ignore="UseCompoundDrawables,UselessParent">
@@ -147,7 +147,7 @@
                     android:layout_width="156.2dp"
                     android:layout_height="200dp"
                     android:layout_marginStart="10dp"
-                    android:background="@drawable/fundo_verde_vertical"
+                    android:background="@drawable/parte_verde_vertical_a"
                     android:gravity="center"
                     android:orientation="vertical"
                     tools:ignore="UseCompoundDrawables,UselessParent">
@@ -180,7 +180,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/fundo_verde_horizontal"
+                android:background="@drawable/parte_verde_horizontal_a"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
@@ -213,7 +213,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/fundo_verde_horizontal"
+                android:background="@drawable/parte_verde_horizontal_a"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
@@ -246,7 +246,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/fundo_verde_horizontal"
+                android:background="@drawable/parte_verde_horizontal_a"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
@@ -258,7 +258,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="10dp"
                     android:contentDescription="@string/img_pet"
-                    app:srcCompat="@drawable/roedor" />
+                    app:srcCompat="@drawable/roedor_norman" />
 
                 <TextView
                     android:id="@+id/txt_roedor"

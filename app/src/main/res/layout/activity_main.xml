@@ -126,7 +126,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/borda_redonda"
+                    android:background="@drawable/borda_redonda_a"
                     android:orientation="horizontal">
 
                     <LinearLayout
@@ -300,21 +300,24 @@
                             android:layout_width="150dp"
                             android:layout_height="80dp"
                             android:layout_marginEnd="20dp"
-                            android:contentDescription="@string/img_video" />
+                            android:contentDescription="@string/img_video"
+                            app:srcCompat="@drawable/video_1_home_" />
 
                         <ImageView
                             android:id="@+id/img_video2"
                             android:layout_width="150dp"
                             android:layout_height="80dp"
                             android:layout_marginEnd="20dp"
-                            android:contentDescription="@string/img_video" />
+                            android:contentDescription="@string/img_video"
+                            app:srcCompat="@drawable/video_2_home_" />
 
                         <ImageView
                             android:id="@+id/img_video3"
                             android:layout_width="150dp"
                             android:layout_height="80dp"
                             android:layout_marginEnd="20dp"
-                            android:contentDescription="@string/img_video" />
+                            android:contentDescription="@string/img_video"
+                            app:srcCompat="@drawable/video_3_home_" />
 
                         <ImageView
                             android:id="@+id/img_mais"

@@ -99,13 +99,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         });
 
         img_video2.setOnClickListener(v ->{
-            Uri youtube = Uri.parse("https://youtu.be/XSeFRgFjzrc?si=oQou-H3yKv4eV-iB");
+            Uri youtube = Uri.parse("https://www.youtube.com/watch?v=C4IacM_Xwmo&list=PLN3vAG4T-2AitMRsH5GEGAEuM6yfy5Qes&index=5");
             Intent video = new Intent(Intent.ACTION_VIEW, youtube);
             startActivity(video);
         });
 
         img_video3.setOnClickListener(v ->{
-            Uri youtube = Uri.parse("https://youtu.be/XSeFRgFjzrc?si=oQou-H3yKv4eV-iB");
+            Uri youtube = Uri.parse("https://www.youtube.com/watch?v=kKRZh3YRiRQ&list=PLN3vAG4T-2AitMRsH5GEGAEuM6yfy5Qes&index=10");
             Intent video = new Intent(Intent.ACTION_VIEW, youtube);
             startActivity(video);
         });
