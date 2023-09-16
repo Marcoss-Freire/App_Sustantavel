@@ -72,7 +72,7 @@ public class Primeiros_socorros extends AppCompatActivity {
         img_localizacao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri location = Uri.parse("geo:0,0?q=Rua+Catão+1157+Vila+Romana+Lapa+São+Paulo");
+                Uri location = Uri.parse("geo:0,0?q=Hospitais+Veterinários+próximos+de+mim");
                 Intent mapa = new Intent(Intent.ACTION_VIEW,location);
                 startActivity(mapa);
             }
