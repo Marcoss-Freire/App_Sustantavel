@@ -105,7 +105,7 @@ public class Tipos extends AppCompatActivity {
 
         img_roedor.setOnClickListener(v -> {
             Intent passar_dados = new Intent(this, Cuidados.class);
-            img_pet = R.drawable.roedor;
+            img_pet = R.drawable.roedor_norman;
             nome_pet = getString(R.string.nome_roedor);
             text_desc = getString(R.string.descricao_roedor);
             text_aliment = getString(R.string.aliment_roedor) + "\n" + getString(R.string.aliment_roedor2);

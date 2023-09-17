@@ -72,7 +72,6 @@
         android:background="@drawable/fundo_r_tulo"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/SCRbase"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -82,7 +81,9 @@
             android:id="@+id/txt_rotulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/comic_neue_bold"
             android:text="@string/txt_inicio"
+            android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -255,11 +256,13 @@
 
                 <Spinner
                     android:id="@+id/spinner_socorro"
+                    style="@android:style/Widget.Material.Light.Spinner.Underlined"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/nav_bar"
+                    android:background="@drawable/fundo_spinner"
                     android:entries="@array/array_tipo"
+                    android:foregroundTint="@color/brown"
                     android:popupBackground="@color/light_green" />
 
             </LinearLayout>
@@ -286,6 +289,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
                     android:contentDescription="@string/scr_base"
                     android:scrollbars="horizontal">
 
@@ -293,6 +297,7 @@
                         android:id="@+id/LLvideo"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:gravity="center_vertical"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -321,8 +326,8 @@
 
                         <ImageView
                             android:id="@+id/img_mais"
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
                             android:layout_marginEnd="20dp"
                             android:contentDescription="@string/img_mais"
                             android:scaleType="fitCenter"

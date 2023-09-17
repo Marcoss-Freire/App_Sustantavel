@@ -23,7 +23,7 @@ public class Perfil extends AppCompatActivity {
     Button btn_cadastro;
     ImageView img_avatar;
     ImageButton btn_home, btn_video, btn_perfil;
-    TextView dados, txt_nome_usu, txt_id_usu, txt_nome, txt_sobrenome, txt_id, txt_email, txt_telefone;
+    TextView txt_dados, txt_nome_usu, txt_id_usu, txt_nome, txt_sobrenome, txt_id, txt_email, txt_telefone;
     Chip visibilidade;
     String nome, sobrenome, id, email, telefone, status;
     Integer avatar_int;
@@ -40,7 +40,7 @@ public class Perfil extends AppCompatActivity {
         btn_cadastro = findViewById(R.id.btn_cadastro);
         txt_nome_usu = findViewById(R.id.txt_nome_usu);
         txt_id_usu = findViewById(R.id.txt_id);
-        dados = findViewById(R.id.txt_dados);
+        txt_dados = findViewById(R.id.txt_dados);
         txt_nome = findViewById(R.id.txt_nome);
         txt_id = findViewById(R.id.txt_id_dados);
         txt_sobrenome = findViewById(R.id.txt_sobrenome);
@@ -90,6 +90,7 @@ public class Perfil extends AppCompatActivity {
         visibilidade.setOnClickListener(v -> {
             status = String.valueOf(visibilidade.getText());
              if(status.equals("Mostrar")) {
+                 txt_dados.setVisibility(View.VISIBLE);
                 txt_nome.setVisibility(View.VISIBLE);
                 txt_sobrenome.setVisibility(View.VISIBLE);
                 txt_id.setVisibility(View.VISIBLE);

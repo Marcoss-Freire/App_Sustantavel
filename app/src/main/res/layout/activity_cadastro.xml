@@ -42,8 +42,11 @@
             <Spinner
                 android:id="@+id/sppinner_avatar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="24dp"
+                android:background="@drawable/borda_redonda_a"
+                android:backgroundTint="@color/brown"
                 android:entries="@array/array_avatar"
+                android:popupBackground="@color/light_brown"
                 tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
 
@@ -69,6 +72,8 @@
             android:ems="10"
             android:hint="@string/nome_exe"
             android:inputType="text"
+            android:textColor="@color/gray_blue"
+            android:textColorHint="@color/brown"
             android:textSize="14sp"
             tools:ignore="TouchTargetSizeCheck" />
 
@@ -94,6 +99,8 @@
             android:ems="10"
             android:hint="@string/sobrenome_exe"
             android:inputType="text"
+            android:textColor="@color/gray_blue"
+            android:textColorHint="@color/brown"
             android:textSize="14sp"
             tools:ignore="TouchTargetSizeCheck" />
 
@@ -119,6 +126,8 @@
             android:ems="10"
             android:hint="@string/id_exe"
             android:inputType="text"
+            android:textColor="@color/gray_blue"
+            android:textColorHint="@color/brown"
             android:textSize="14sp"
             tools:ignore="TouchTargetSizeCheck" />
 
@@ -144,6 +153,8 @@
             android:ems="10"
             android:hint="@string/email_exe"
             android:inputType="text|textEmailAddress"
+            android:textColor="@color/gray_blue"
+            android:textColorHint="@color/brown"
             android:textSize="14sp"
             tools:ignore="TouchTargetSizeCheck" />
 
@@ -169,6 +180,8 @@
             android:ems="10"
             android:hint="@string/telefone_exe"
             android:inputType="phone"
+            android:textColor="@color/gray_blue"
+            android:textColorHint="@color/brown"
             android:textSize="14sp"
             tools:ignore="TouchTargetSizeCheck" />
 
@@ -206,9 +219,10 @@
                 android:id="@+id/imgbtn_home"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
+                android:background="@color/blue_gray"
                 android:contentDescription="@string/imgbtn_home"
                 android:scaleType="fitXY"
-                android:src="@drawable/btn_home_c"
+                android:src="@drawable/btn_home_b"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <ImageButton
@@ -217,18 +231,20 @@
                 android:layout_height="45dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
+                android:background="@color/blue_gray"
                 android:contentDescription="@string/imgbtn_video"
                 android:scaleType="fitXY"
-                android:src="@drawable/icon_video_c"
+                android:src="@drawable/icon_video_b"
                 tools:ignore="TouchTargetSizeCheck" />
 
             <ImageButton
                 android:id="@+id/imgbtn_perfil"
                 android:layout_width="45dp"
                 android:layout_height="45dp"
+                android:background="@color/blue_gray"
                 android:contentDescription="@string/imgbtn_perfil"
                 android:scaleType="fitXY"
-                android:src="@drawable/btn_perfil_c"
+                android:src="@drawable/icon_perfil_b"
                 tools:ignore="TouchTargetSizeCheck" />
 
         </LinearLayout>
@@ -250,7 +266,9 @@
             android:id="@+id/txt_rotulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/comic_neue_bold"
             android:text="@string/rotulo_cadastro"
+            android:textColor="@color/white"
             android:textSize="20sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
