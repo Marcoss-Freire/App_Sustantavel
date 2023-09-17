@@ -23,5 +23,8 @@
 
 ![Diagrama_de_Classes](https://github.com/Marcoss-Freire/App_Sustantavel/assets/128001916/293fa0de-f4f0-401b-8a5a-0e99b35a3f83)
 
+## EXECUÇÃO DO APP
+
+<a href="video/Teste_App_Sustentavel.mp4">Video</a>
 
 
