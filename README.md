@@ -28,7 +28,7 @@
 
 <a href="video/Teste_App_Sustentavel.mp4">Video</a>
 
-
-https://github.com/Marcoss-Freire/App_Sustantavel/assets/128001916/4115ab6c-82ef-4d6e-aae8-15bd159b9583
-
+<center>
+  https://github.com/Marcoss-Freire/App_Sustantavel/assets/128001916/4115ab6c-82ef-4d6e-aae8-15bd159b9583
+</center>
 
