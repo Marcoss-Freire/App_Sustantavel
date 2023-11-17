@@ -13,6 +13,7 @@
 <p>Após conversar com a professora Luana, a dupla chegou à conclusão de fazer um app que mostre como fazer brinquedos e acessórios para pets com materiais recicláveis através de vídeos. A partir disso, os usuários poderiam adicionar mais vídeos na plataforma.</p>
 <p>Além disso, o aplicativo contaria com um guia de cuidados (separados por tipos de pets) e o que fazer caso encontre algum animal em situação de emergência (primeiros socorros). Nesse sentido, poderia utilizar a localização para procurar estabelecimentos próximos (pets shops, veterinários, etc).</p>
 <p>Ademais, para utilizar os sensores, pretendemos colocar (se possível) uma opção de verificar se o som do ambiente está adequado para os pets. Na parte de armazenar dados, seria o login, senha e os vídeos.</p>
+<p>Para a finalização do projeto, foi solicitada a implementação de sensor. No caso, o sensor escolhido foi acelerômetro para mudar a imagem ao sacudir o smartphone</p>
 
 ## TELAS
 
@@ -27,4 +28,4 @@
 
 <a href="video/Teste_App_Sustentavel.mp4">Video</a>
 
-
+<a heref="video/Teste_Sensor.mp4">Sensor</a>
