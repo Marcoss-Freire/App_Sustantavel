@@ -28,4 +28,4 @@
 
 <a href="video/Teste_App_Sustentavel.mp4">Video</a>
 
-<a heref="video/Teste_Sensor.mp4">Sensor</a>
+<a href="video/Teste_Sensor.mp4">Sensor</a>
