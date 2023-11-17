@@ -175,7 +175,7 @@ public class Perfil extends AppCompatActivity implements SensorEventListener {
     }
 
     private void mensagem_sensor() {
-        Toast sensor = Toast.makeText(this, "Sacuda o telefone para mudar a imagem", Toast.LENGTH_SHORT);
+        Toast sensor = Toast.makeText(this, "Balence o telefone para mudar a imagem", Toast.LENGTH_SHORT);
         sensor.show();
     }
 
