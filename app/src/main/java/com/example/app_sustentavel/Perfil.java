@@ -3,6 +3,10 @@ package com.example.app_sustentavel;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,12 +15,15 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.chip.Chip;
 
-public class Perfil extends AppCompatActivity {
+import java.util.Random;
+
+public class Perfil extends AppCompatActivity implements SensorEventListener {
 
     LinearLayout LLbase;
     ScrollView SCRbase;
@@ -28,6 +35,10 @@ public class Perfil extends AppCompatActivity {
     String nome, sobrenome, id, email, telefone, status;
     Integer avatar_int;
     Bitmap avatar;
+
+    SensorManager sensorManager;
+    Sensor sensor;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +82,13 @@ public class Perfil extends AppCompatActivity {
             txt_id.setText(txt_id.getText() + " " + id);
             txt_email.setText(txt_email.getText() + " " + email);
             txt_telefone.setText(txt_telefone.getText() + " " + telefone);
+
+
+            sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE); // Acessar os sensores
+            sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER); // Acessar o sensor de acelerômetro
+
+            // Atraso de resposta do sensor
+            sensorManager.registerListener(Perfil.this, sensor, sensorManager.SENSOR_DELAY_NORMAL);
         }
 
         if(nome != null || sobrenome != null || id != null || email != null ||telefone != null){
@@ -89,8 +107,8 @@ public class Perfil extends AppCompatActivity {
 
         visibilidade.setOnClickListener(v -> {
             status = String.valueOf(visibilidade.getText());
-             if(status.equals("Mostrar")) {
-                 txt_dados.setVisibility(View.VISIBLE);
+            if(status.equals("Mostrar")) {
+                txt_dados.setVisibility(View.VISIBLE);
                 txt_nome.setVisibility(View.VISIBLE);
                 txt_sobrenome.setVisibility(View.VISIBLE);
                 txt_id.setVisibility(View.VISIBLE);
@@ -99,16 +117,19 @@ public class Perfil extends AppCompatActivity {
 
                 visibilidade.setText(getString(R.string.ocultar));
             }
-             else{
-                 txt_nome.setVisibility(View.INVISIBLE);
-                 txt_sobrenome.setVisibility(View.INVISIBLE);
-                 txt_id.setVisibility(View.INVISIBLE);
-                 txt_email.setVisibility(View.INVISIBLE);
-                 txt_telefone.setVisibility(View.INVISIBLE);
+            else{
+                txt_nome.setVisibility(View.INVISIBLE);
+                txt_sobrenome.setVisibility(View.INVISIBLE);
+                txt_id.setVisibility(View.INVISIBLE);
+                txt_email.setVisibility(View.INVISIBLE);
+                txt_telefone.setVisibility(View.INVISIBLE);
 
-                 visibilidade.setText(getString(R.string.mostrar));
-             }
+                visibilidade.setText(getString(R.string.mostrar));
+            }
         });
+
+
+
 
         // Programação da NavBar
         btn_home.setOnClickListener(v -> {
@@ -125,5 +146,41 @@ public class Perfil extends AppCompatActivity {
             Intent perfil = new Intent(this, Perfil.class);
             startActivity(perfil);
         });
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        float x = event.values[0];
+
+        if (x > 18) {
+            img_Random(); // Função para mudar a imagem
+            mensagem_sensor(); // Função para toast
+        }
+    }
+
+    private void img_Random() {
+        int[] pets = {
+                R.drawable.max,
+                R.drawable.duke,
+                R.drawable.snowball,
+                R.drawable.mel,
+                R.drawable.chloe,
+                R.drawable.gidget
+        }; // Array com os nomes da imagens
+
+        Random random = new Random(); // Gera um número aleatório
+        int random_Pet = random.nextInt(pets.length); // Gera um número aleatório com no máximo o númeor de imagens
+
+        img_avatar.setImageResource(pets[random_Pet]); // Muda a imagem de acordo com o número
+    }
+
+    private void mensagem_sensor() {
+        Toast sensor = Toast.makeText(this, "Sacuda o telefone para mudar a imagem", Toast.LENGTH_SHORT);
+        sensor.show();
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
     }
 }
